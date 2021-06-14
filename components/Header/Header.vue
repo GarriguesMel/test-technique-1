@@ -7,7 +7,7 @@
     <span class="icon is-medium">
       <i class="fab fa-github"></i>
     </span>
-      <span>()CART</span>
+      <span>({{cartQty}})- {{ cartTotal }}CART</span>
     </a>
 
 
@@ -17,7 +17,23 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  computed: {
+    cartTotal() {
+      let sum = 0
+      for (let key in this.$store.state.cart) {
+        sum = sum + this.$store.state.cart[key].product.price * this.$store.state.cart[key].qty
+      }
+      return sum + '$'
+    },
+    cartQty: function() {
+      let qty = 0
+      for (let key in this.$store.state.cart) {
+        qty = qty +  this.$store.state.cart[key].qty
+      }
+      return qty
+    }
+  }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="columns  is-vcentered is-mobile">
     <div class="column is-2">
-      <button
+      <button @click="addItem(item)"
        class="button  is-success"
       >
         ADD
@@ -34,6 +34,12 @@ export default {
     dollar(value) {
       return '$' + Number.parseFloat(value).toFixed(2)
     }
+  },
+  methods: {
+    addItem(product) {
+      this.$store.commit('addItem', product)
+
   }
+}
 }
 </script>
