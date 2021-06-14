@@ -36,9 +36,8 @@ export default {
     }
   },
   methods: {
-    addItem(product) {
-      this.$store.commit('addItem', product)
-
+    addItem(item) {
+      this.$store.commit('addItem', item)
   }
 }
 }

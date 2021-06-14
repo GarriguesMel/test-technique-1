@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header></Header>
     <nuxt/>
   </div>
 </template>
@@ -9,9 +8,8 @@
 </style>
 
 <script>
-import Header from "../components/Header/Header";
 export default {
-  components: {Header}
+
 }
 
 </script>

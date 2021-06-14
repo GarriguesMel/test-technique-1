@@ -3,12 +3,17 @@
     <font-awesome-icon :icon="['fas', 'twitter']" class="icon alt"/>
 
     <div class="navbar-brand  ">
+
+
+      <nuxt-link :to="{ name: 'cart', params: { slug: cartCurr } }">
+
     <a class="button is-large">
     <span class="icon is-medium">
       <i class="fab fa-github"></i>
     </span>
       <span>({{cartQty}})- {{ cartTotal }}CART</span>
     </a>
+      </nuxt-link>
 
 
   </div>
@@ -32,6 +37,9 @@ export default {
         qty = qty +  this.$store.state.cart[key].qty
       }
       return qty
+    },
+    cartCurr: function() {
+      return  this.$store.state.cart;
     }
   }
 }

@@ -1,11 +1,14 @@
 <template>
   <section class="container">
+    <Header></Header>
+
     <product-list :products="products" />
   </section>
 </template>
 
 <script>
 import ProductList from '@/components/ProductList'
+import Header from '@/components/Header/Header';
 
 export default {
   name: 'Home',
@@ -16,7 +19,8 @@ export default {
   },
   props: ['products'],
   components: {
-    ProductList
+    ProductList,
+    Header
   },
 }
 </script>
