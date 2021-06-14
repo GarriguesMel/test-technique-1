@@ -2,9 +2,9 @@
   <div class="columns  is-vcentered is-mobile">
     <div class="column is-2">
       <button
-       class="button is-success"
+       class="button  is-success"
       >
-        +
+        ADD
       </button>
     </div>
 
