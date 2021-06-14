@@ -22,7 +22,6 @@ module.exports = {
   ],
   /*
   ** Global CSS
-  */
   css: [
     { src: '~/assets/scss/app.scss', lang: 'scss' },
   ],

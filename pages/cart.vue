@@ -63,11 +63,10 @@ export default {
   },
   methods: {
     Add(item){
-      console.log(item)
       this.$store.commit('addItem', item.product)
     },
     Del(item){
-      this.$store.commit('deleteItem', item)
+       this.$store.commit('deleteItem', item)
     }
   }
 }

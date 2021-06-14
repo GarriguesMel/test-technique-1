@@ -1,3 +1,4 @@
+
 export const state = () => ({
   cart: []
 })
@@ -19,6 +20,7 @@ export const mutations = {
     } else {
       state.cart.push({ product: product, qty: 1 })
     }
+
   },
   deleteItem(state, product ) {
     this.state.cart.forEach(function (elem, index, object){

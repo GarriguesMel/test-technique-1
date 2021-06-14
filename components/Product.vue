@@ -38,7 +38,7 @@ export default {
   methods: {
     addItem(item) {
       this.$store.commit('addItem', item)
-  }
+   }
 }
 }
 </script>
