@@ -14,7 +14,7 @@ Les composants seront dans le dossier /components, les pages dans /pages et dans
 - product & productlist contient l'affichage des produits
 - il y'a deux pages l'index et le cart.
 - les tests sont dans le dossier des composants.
-- 
+
 ## Mise en forme
 
 - les composant globaux sont dans /global.
@@ -32,7 +32,7 @@ https://hplussport.com/api/products/order/price
 - Boilerplate : https://github.com/SafeStudio/nuxt-bulma-boilerplate
 - Nuxt: https://nuxtjs.org/
 - Bulma:https://bulma.io/
-- 
+
 ## Build Setup
 
 ``` bash
